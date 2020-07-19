@@ -11,6 +11,7 @@ public class InheritanceJava {
 }
 class Child extends InheritanceJava{
 	String sex = "Female";
+	//overriding parent class method
 	protected String displayAddress() {
 		return "Athlone";
 	}
