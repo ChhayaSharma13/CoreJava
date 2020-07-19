@@ -12,7 +12,7 @@ public class VariableScope {
 		System.out.println(v1.value);
 		System.out.println(v2.value);
 		System.out.println(v1.value2);
-		System.out.println(v2.value2);
+		System.out.println(v2.value2); 
 		v1.Hello();
 		v1.value = "Hello, I want to change the String value";
 		v1.value2 = "Hello, I want to change the String value";
