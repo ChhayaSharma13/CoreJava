@@ -6,6 +6,8 @@ public class VariableScope {
 		String value = "inside my function";
 		System.out.println(value);
 	}
+	//Static variable belongs to class, not to any specific variable
+	
 	public static void main(String[] args) {
 		VariableScope v1 = new VariableScope();
 		VariableScope v2 = new VariableScope();
