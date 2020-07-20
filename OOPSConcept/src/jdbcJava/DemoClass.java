@@ -9,7 +9,7 @@ public class DemoClass {
 //	6.process the results
 //	7.Close
 
-	public static void main(String[] args) {
+	public static void main(String[] a) {
 
 		
 	}
