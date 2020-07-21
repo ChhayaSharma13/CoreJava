@@ -6,8 +6,30 @@ public class ArrayDemo {
 	
 	public static void displayArray() {
 		for(int i=1; i<= a.length;i++) {
-			System.out.println(a[i-1]);
+			System.out.print(a[i-1]+ " ");
 		}
+	}
+	public static void forEachDisplay() {
+		System.out.println("\nArray by ForEach :");
+		for(int i:a) {
+			System.out.print(i +" ");
+		}
+	}
+	public static void whileLoop() {
+		System.out.println("\nWhile Loop for Array Display: ");
+		int i=0;
+		while( i<a.length) {
+			System.out.print(a[i]+ " ");
+			i++;
+		}
+	}
+	public static void doWhile() {
+		System.out.println("\nDo while loop");
+		int i=0;
+		do {
+			System.out.print(a[i]+" ");
+			i++;
+		}while(i<a.length);
 	}
 	public static void main(String[] args) {
 		int[] b = new int[] {1,2,5};
@@ -17,8 +39,11 @@ public class ArrayDemo {
 		for(int i=1; i<= a.length;i++) {
 			a[i-1] = 2 *(i);
 		}	
-		displayArray();
 		
+		displayArray();
+		forEachDisplay();
+		whileLoop();
+		doWhile();
 	}
 
 }
