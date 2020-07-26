@@ -15,7 +15,18 @@ public class ArrayListJava {
 		days.add("Saturday");
 		days.add("Sunday");
 		System.out.println(days);
+		System.out.println(days.get(0));
+		System.out.println(days.get(7));
+		days.remove(4);
+		System.out.println(days);
+		System.out.println(days.size());
+		System.out.println(days.get(6));
 		
+//		Loop through an array
+		for(int i=0; i<days.size();i++) {
+			System.out.println("Day "+(i+1)+ " of week is " + days.get(i));
+		}
 	}
+	
 
 }
