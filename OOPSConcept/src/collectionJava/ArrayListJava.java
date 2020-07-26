@@ -27,10 +27,16 @@ public class ArrayListJava {
 		for(int i=0; i<days.size();i++) {
 			System.out.println("Day "+(i+1)+ " of week is " + days.get(i));
 		}
+//		Update an item
+		days.set(6, "Holiday");
+		for(int i=0; i<days.size();i++) {
+			System.out.println(days.get(i));
+		}
 		Collections.sort(days);
 		for(int i=0; i<days.size();i++) {
 			System.out.println(days.get(i));
 		}
+
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(89);
 		numbers.add(9);
