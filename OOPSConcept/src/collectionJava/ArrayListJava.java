@@ -1,6 +1,7 @@
 package collectionJava;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListJava {
 	
@@ -26,6 +27,23 @@ public class ArrayListJava {
 		for(int i=0; i<days.size();i++) {
 			System.out.println("Day "+(i+1)+ " of week is " + days.get(i));
 		}
+		Collections.sort(days);
+		for(int i=0; i<days.size();i++) {
+			System.out.println(days.get(i));
+		}
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(89);
+		numbers.add(9);
+		numbers.add(11);
+		numbers.add(56);
+		numbers.add(7);
+		for(int i:numbers) {
+			System.out.println(i);
+		}
+		Collections.sort(numbers);
+		System.out.println(numbers);
+		
+		
 	}
 	
 
