@@ -1,0 +1,2 @@
+Files in Java is fun topic to practice and use.
+ Now, I am appending this String to  see if it is going to write or do changes
