@@ -14,6 +14,15 @@ public class ReadFromfileDemo {
 				System.out.println(data);
 			}
 			sc.close();
+			if(f.exists()) {
+				System.out.println("File name: "+f.getName());
+				System.out.println("Absolute Path: "+f.getAbsolutePath());
+				System.out.println("Writable: "+f.canWrite());
+				System.out.println("Readable: "+f.canRead());
+				System.out.println("File size in bytes" + f.length());
+			}else {
+				System.out.println("file doesn't exist");
+			}
 		}catch(Exception e) {
 			System.out.println("An error occured");
 			e.printStackTrace();
