@@ -42,5 +42,6 @@ public class VectorExample {
 //		int elementCount: number of elements currently in vector stored in it.
 //		object elementData[]: Array that holds the vector  in it.
 		
+		
 		}
 }
