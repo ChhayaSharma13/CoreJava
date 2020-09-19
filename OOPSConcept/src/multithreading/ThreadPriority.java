@@ -4,7 +4,7 @@ public class ThreadPriority {
 	public static void main(String[] args) throws InterruptedException {
 		Thread t1 = new Thread(() ->{
 			for(int i=0;i<=5;i++) {
-				System.out.println("Hello");
+				System.out.println("Hello and Thread Priority is: " + Thread.currentThread().getPriority());
 				try {Thread.sleep(1000);}catch(Exception ex) {};
 			}
 		});
