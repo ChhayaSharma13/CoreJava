@@ -11,14 +11,21 @@ public class Runner {
 //	awt version is a class used for creating a dropdown list GUI element
 	public static void main(String[] args) {
 		List<Laptop> laps = new ArrayList<>();
-		laps.add(new Laptop("DELL", 8, 800));
-		laps.add(new Laptop("Apple", 8, 1200));
+		laps.add(new Laptop("DELL", 16, 1000));
+		laps.add(new Laptop("Apple", 12, 1200));
 		laps.add(new Laptop("Lenovo", 8, 700));
 		
 //		Collection.sort(laps);
 //		Collection  - Interface  - std. functionality of DS like List, Set and Queue
 //		Collections - class - to sort and synchronize the collection elements
+		
+		
+//		Comparable interface for sorting List
 		Collections.sort(laps);
+		
+		for(Laptop l:laps) {
+			System.out.println(l);
+		}
 	}
 
 }

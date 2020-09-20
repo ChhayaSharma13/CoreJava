@@ -29,9 +29,15 @@ public class Laptop implements Comparable<Laptop>{
 		this.price = price;
 	}
 	@Override
+	public String toString() {
+		return "Laptop [brand=" + brand + ", ram=" + ram + ", price=" + price + "]";
+	}
+	@Override
 	public int compareTo(Laptop lap2) {
-		// TODO Auto-generated method stub
-		return 0;
+		if(this.getRam() >lap2.getRam()) 
+			return 1;
+		else 
+			return -1;
 	}
 	
 	
