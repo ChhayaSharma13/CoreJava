@@ -3,6 +3,7 @@ package comparableComparator;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Runner {
@@ -21,11 +22,21 @@ public class Runner {
 		
 		
 //		Comparable interface for sorting List
-		Collections.sort(laps);
 		
+		Comparator<Laptop> com = new Comparator<Laptop>() {
+			public int compare(Laptop l1,Laptop l2) {
+				if(l1.getPrice() >l2.getPrice()) 
+					return 1;
+				else 
+					return -1;
+			}
+		};
+//		Collections.sort(laps);
+		Collections.sort(laps, com);
 		for(Laptop l:laps) {
 			System.out.println(l);
 		}
+		
 	}
 
 }
