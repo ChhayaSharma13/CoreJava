@@ -1,6 +1,6 @@
 package comparableComparator;
 
-public class Laptop {
+public class Laptop implements Comparable<Laptop>{
 	private String brand;
 	private int ram;
 	private int price;
@@ -27,6 +27,11 @@ public class Laptop {
 		this.brand = brand;
 		this.ram = ram;
 		this.price = price;
+	}
+	@Override
+	public int compareTo(Laptop lap2) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	

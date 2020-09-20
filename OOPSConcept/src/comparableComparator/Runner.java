@@ -1,6 +1,8 @@
 package comparableComparator;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Runner {
@@ -13,7 +15,10 @@ public class Runner {
 		laps.add(new Laptop("Apple", 8, 1200));
 		laps.add(new Laptop("Lenovo", 8, 700));
 		
-		
+//		Collection.sort(laps);
+//		Collection  - Interface  - std. functionality of DS like List, Set and Queue
+//		Collections - class - to sort and synchronize the collection elements
+		Collections.sort(laps);
 	}
 
 }
