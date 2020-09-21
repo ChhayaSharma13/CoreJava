@@ -1,0 +1,8 @@
+Polymorphism: capaabilities to do multiple thing while having one name
+
+2 types of Polymorphism:
+1. Compile Time Polymorphism- Static or Early Binding
+	Method Overloading
+	
+2. Runtime Polymorphism: dynamic or late binding
+	Method Overriding
