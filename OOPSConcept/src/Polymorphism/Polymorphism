@@ -1,8 +1,13 @@
 Polymorphism: capaabilities to do multiple thing while having one name
 
-2 types of Polymorphism:
+2 types of Polymorphism :
 1. Compile Time Polymorphism- Static or Early Binding
 	Method Overloading
 	
 2. Runtime Polymorphism: dynamic or late binding
 	Method Overriding
+	Dynamic Method Dispatch
+	
+	- Super class reference variable can refer to a subclass object. This is also known as Upcasting. 
+	- Java used this fact to resolve calls to overridden methods at run time.
+	- final, static and private can't be overridden
